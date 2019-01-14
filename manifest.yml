@@ -1,0 +1,6 @@
+---
+applications:
+- name: urlcodes-app
+  buildpacks: 
+   - https://github.com/cloudfoundry/ruby-buildpack#v1.6.47
+  memory: 512M
