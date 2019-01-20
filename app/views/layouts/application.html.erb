@@ -48,5 +48,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.js"></script>
 
+<script>
+$(function(){
+ var _html = $("input[name=commit]");
+ var _action = $("input[name=commit]").attr("data-disable-with")
+ var firstWord = _action.substr(0, _action.indexOf(" "));
+ _html.attr("value", firstWord + " Item")
+})
+</script>
+
+
   </body>
 </html>
